@@ -1,14 +1,77 @@
 :root
 {
-    /* Color Variables */
+    /* Grey */
+    --black:        #000000;
+    --grey-1:       #232323;
+    --white:        #FFFFFF;
 
-    /* Text Size Variables */
+    /* Colors */
 
-    /* Initial Setup */
-    color-scheme: dark;
+
+    /* Text Sizes */
+    --text-2xs:     10;
+    --text-xs:      12;
+    --text-s:       14;
+    --text-m:       16;
+    --text-l:       20;
+    --text-xl:      24;
+    --text-2xl:     34;
+    --text-3xl:     48;
+    --text-4xl:     60;
+    --text-5xl:     96;
+    --text-6xl:     128;
+
+    /* Font */
+
+    /* Space */
+    --space-2xs:    5;
+    --space-xs:     10;
+    --space-s:      15;
+    --space-m:      25;
+    --space-l:      35;
+    --space-xl:     50;
+    --space-2xl:    100;
+
+    /* Theme */
+    color-scheme:   dark;
 }
 
 body
 {
     margin: 0;
+}
+
+/* Nav Bar */
+nav
+{
+    display:            flex;
+    flex-direction:     row;
+    align-items:        center;
+    justify-content:    space-between;
+    padding:            10px 25px;
+}
+
+nav ul
+{
+    list-style-type:    none;
+    display:            flex;
+    flex-direction:     row;
+    align-items:        center;
+    margin:             0;
+    padding:            0;
+    gap:                10px;
+}
+
+.navBtn
+{
+    display:        flex;
+    flex-direction: row;
+    align-items:    center;
+    padding:        0;
+}
+
+.navBtn a
+{
+    /* typography */
+    text-decoration: none;
 }
