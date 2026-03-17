@@ -2,6 +2,8 @@
 @import "pencerio.css";
 @import "array.css";
 @import "bespoke-serif.css";
+@import "bespoke-stencil.css";
+@import "britney.css";
 
 :root
 {
@@ -49,99 +51,102 @@
     color-scheme:   dark;
 }
 
-body
+html
 {
-    /* layout */
-    margin:                 0;
-    padding:                0;
-    display:                grid;
-    grid-template-rows:     auto 1fr;
-    grid-template-areas:    "header" "main";
-    height:                 100vh;
-
-    /* default font */
-    font-family:            BespokeSerif-Regular;
-}
-
-/* Nav Bar */
-nav
-{
-    display:            flex;
-    flex-direction:     row;
-    align-items:        center;
-    justify-content:    space-between;
-    padding:            0;
-
-    ul
-    {
-        list-style-type:    none;
-        display:            flex;
-        flex-direction:     row;
-        align-items:        center;
-        margin:             0;
-        padding:            0;
-        gap:                0;
-    }
-
-    .navBtn
-    {
-        display:            flex;
-        flex-direction:     row;
-        align-items:        center;
-        padding:            var(--space-xs) var(--space-s);
-
-        /* Typography */
-        text-decoration:    none;
-        color:              var(--grey-9);
-
-        span 
-        {
-            color:          var(--color-2);
-        }
-    }
-
-    .navBtn:hover
-    {
-        color:              var(--grey-2);
-        background-color:   var(--color-2);
-        
-        span 
-        {
-            color:          var(--grey-2);
-        }
-    }
-
-    .name
-    {
-        font-family:        Aktura-Regular;
-    }
-}
-
-main
-{
-    /* layout */
-        display:            flex;
-        flex-direction:     row;
-        align-items:        center;
-        justify-content:    center;
-        height:             100%;
-
-    /* style */
-    background-color:   var(--black);
-
-
-    /* PAGE TITLE */
-    .pgTitle
+    body
     {
         /* layout */
-        display:            flex;
-        align-items:        center;
-        justify-content:    center;
+        margin:                 0;
+        padding:                0;
+        display:                grid;
+        grid-template-rows:     auto 1fr;
+        grid-template-areas:    "header" "main";
+        height:                 100vh;
 
-        /* typography */
-        font-size:          var(--text-4xl);
-        font-weight:        bold;
-        text-align:         center;
-        color:              var(--color-2-2);
+        /* style */
+        background-color:       var(--black);
+
+        /* default font */
+        font-family:            BespokeSerif-Regular;
+
+        /* Nav Bar */
+        nav
+        {
+            display:            flex;
+            flex-direction:     row;
+            align-items:        center;
+            justify-content:    space-between;
+            padding:            0;
+
+            ul
+            {
+                list-style-type:    none;
+                display:            flex;
+                flex-direction:     row;
+                align-items:        center;
+                margin:             0;
+                padding:            0;
+                gap:                0;
+            }
+
+            .navBtn
+            {
+                display:            flex;
+                flex-direction:     row;
+                align-items:        center;
+                padding:            var(--space-xs) var(--space-s);
+
+                /* Typography */
+                text-decoration:    none;
+                color:              var(--grey-9);
+
+                span 
+                {
+                    color:          var(--color-2);
+                }
+            }
+
+            .navBtn:hover
+            {
+                color:              var(--grey-2);
+                background-color:   var(--color-2);
+                
+                span 
+                {
+                    color:          var(--grey-2);
+                }
+            }
+
+            .name
+            {
+                font-family:        BespokeStencil-Extrabold;
+            }
+        }
+
+        main
+        {
+            /* layout */
+                display:            flex;
+                flex-direction:     row;
+                align-items:        center;
+                justify-content:    center;
+                height:             100%;
+
+
+            /* PAGE TITLE */
+            .pgTitle
+            {
+                /* layout */
+                display:            flex;
+                align-items:        center;
+                justify-content:    center;
+
+                /* typography */
+                font-size:          var(--text-4xl);
+                font-weight:        bold;
+                text-align:         center;
+                color:              var(--color-2-2);
+            }
+        }
     }
 }
