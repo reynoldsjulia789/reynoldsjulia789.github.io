@@ -12,9 +12,9 @@
 */
 @font-face {
   font-family: 'Aktura-Regular';
-  src: url('../fonts/Aktura-Regular.woff2') format('woff2'),
-       url('../fonts/Aktura-Regular.woff') format('woff'),
-       url('../fonts/Aktura-Regular.ttf') format('truetype');
+  src: url('../assets/fonts/aktura/Aktura-Regular.woff2') format('woff2'),
+       url('../assets/fonts/aktura/Aktura-Regular.woff') format('woff'),
+       url('../assets/fonts/aktura/Aktura-Regular.ttf') format('truetype');
   font-weight: 400;
   font-display: swap;
   font-style: normal;

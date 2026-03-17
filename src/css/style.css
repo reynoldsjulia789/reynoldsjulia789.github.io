@@ -1,3 +1,7 @@
+@import "aktura.css";
+@import "pencerio.css";
+@import "array.css";
+
 :root
 {
     /* Grey */
@@ -31,9 +35,6 @@
     --text-5xl:     96px;
     --text-6xl:     128px;
 
-    /* Font */
-    font-family:    Helvetica, sans-serif;
-
     /* Space */
     --space-2xs:    5px;
     --space-xs:     10px;
@@ -49,12 +50,16 @@
 
 body
 {
+    /* layout */
     margin:                 0;
     padding:                0;
     display:                grid;
     grid-template-rows:     auto 1fr;
     grid-template-areas:    "header" "main";
     height:                 100vh;
+
+    /* default font */
+    font-family:    Helvetica, sans-serif;
 }
 
 /* Nav Bar */
@@ -107,7 +112,7 @@ nav
 
     .name
     {
-        font-weight:        bold;
+        font-family:        Aktura-Regular;
     }
 }
 
