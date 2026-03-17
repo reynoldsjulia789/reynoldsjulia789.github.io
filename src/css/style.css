@@ -1,46 +1,48 @@
 :root
 {
     /* Grey */
-    --black:        hsl(0, 0, 0);
-    --grey-1:       hsl(0, 0, 5);
-    --grey-2:       hsl(0, 0, 15);
-    --grey-3:       hsl(0, 0, 25);
-    --grey-4:       hsl(0, 0, 35);
-    --grey-5:       hsl(0, 0, 50);
-    --grey-6:       hsl(0, 0, 65);
-    --grey-7:       hsl(0, 0, 75);
-    --grey-8:       hsl(0, 0, 85);
-    --grey-9:       hsl(0, 0, 95);
-    --white:        hsl(0, 0, 100);
+    --black:        #0c0c0c;
+    --grey-1:       #121212;
+    --grey-2:       #1c1c1c;
+    --grey-3:       #2c2c2c;
+    --grey-4:       #595959;
+    --grey-5:       #808080;
+    --grey-6:       #a6a6a6;
+    --grey-7:       #bfbfbf;
+    --grey-8:       #d9d9d9;
+    --grey-9:       #f2f2f2;
+    --white:        #ffffff;
 
     /* Colors */
-    --color-1:      hsl(0, 63, 54);
+    --color-1:      #d44040;
+    --color-2:      #9E9EFF;
+    --color-2-2:    #4d4d69;
 
 
     /* Text Sizes */
-    --text-2xs:     10;
-    --text-xs:      12;
-    --text-s:       14;
-    --text-m:       16;
-    --text-l:       20;
-    --text-xl:      24;
-    --text-2xl:     34;
-    --text-3xl:     48;
-    --text-4xl:     60;
-    --text-5xl:     96;
-    --text-6xl:     128;
+    --text-2xs:     10px;
+    --text-xs:      12px;
+    --text-s:       14px;
+    --text-m:       16px;
+    --text-l:       20px;
+    --text-xl:      24px;
+    --text-2xl:     34px;
+    --text-3xl:     48px;
+    --text-4xl:     60px;
+    --text-5xl:     96px;
+    --text-6xl:     128px;
 
     /* Font */
     font-family:    fantasy;
 
     /* Space */
-    --space-2xs:    5;
-    --space-xs:     10;
-    --space-s:      15;
-    --space-m:      25;
-    --space-l:      35;
-    --space-xl:     50;
-    --space-2xl:    100;
+    --space-2xs:    5px;
+    --space-xs:     10px;
+    --space-s:      15px;
+    --space-m:      25px;
+    --space-l:      35px;
+    --space-xl:     50px;
+    --space-2xl:    100px;
 
     /* Theme */
     color-scheme:   dark;
@@ -58,7 +60,7 @@ nav
     flex-direction:     row;
     align-items:        center;
     justify-content:    space-between;
-    padding:            10px 25px;
+    padding:            0;
 }
 
 nav ul
@@ -69,19 +71,44 @@ nav ul
     align-items:        center;
     margin:             0;
     padding:            0;
-    gap:                10px;
+    gap:                0;
 }
 
 .navBtn
 {
-    display:        flex;
-    flex-direction: row;
-    align-items:    center;
-    padding:        0;
+    display:            flex;
+    flex-direction:     row;
+    align-items:        center;
+    padding:            var(--space-xs) var(--space-s);
+
+    /* Typography */
+    text-decoration:    none;
+    color:              var(--color-2);
 }
 
-.navBtn a
+.navBtn:hover
 {
+    background-color:   var(--grey-3);   
+}
+
+/* Body */
+
+/* PageTitle */
+.pgTitle
+{
+    /* layout */
+    display:            flex;
+    align-items:        center;
+    justify-content:    center;
+    padding:            var(--space-2xl) 0;
+    height:             67vh;
+
+    /* style */
+    background-color:   var(--black);
+
     /* typography */
-    text-decoration: none;
+    font-size:          var(--text-4xl);
+    font-weight:        bold;
+    text-align:         center;
+    color:              var(--color-2-2);
 }
