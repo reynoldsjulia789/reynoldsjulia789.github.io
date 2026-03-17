@@ -1,6 +1,7 @@
 @import "aktura.css";
 @import "pencerio.css";
 @import "array.css";
+@import "bespoke-serif.css";
 
 :root
 {
@@ -59,7 +60,7 @@ body
     height:                 100vh;
 
     /* default font */
-    font-family:    Helvetica, sans-serif;
+    font-family:            BespokeSerif-Regular;
 }
 
 /* Nav Bar */
