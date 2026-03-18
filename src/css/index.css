@@ -9,12 +9,6 @@ body
 /* INDEX PAGE */
 .indexContent
 {
-    /* layout */
-    display:            flex;
-    flex-direction:     row;
-    align-items:        center;
-    justify-content:    center;
-
     .left
     {
         flex:           1;
@@ -40,7 +34,9 @@ body
             margin:  0;
 
             /* typography */
-            font-size:      var(--text-2xl);
+            font-size:          var(--text-2xl);
+            text-wrap:          wrap;
+            text-wrap-style:    balance;
         }
 
         span
@@ -55,7 +51,6 @@ body
             margin:  0;
 
             /* typography */
-
             text-wrap:          wrap;
             text-wrap-style:    balance;
         }

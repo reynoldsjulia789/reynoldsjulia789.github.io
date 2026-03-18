@@ -76,15 +76,6 @@ html
 
         main
         {
-            /* layout */
-                display:            flex;
-                flex-direction:     row;
-                align-items:        center;
-                justify-content:    center;
-                height:             100%;
-                padding-inline:     var(--space-2xl);
-
-
             /* PAGE TITLE */
             .pgTitle
             {
@@ -92,6 +83,7 @@ html
                 display:            flex;
                 align-items:        center;
                 justify-content:    center;
+                height:             100%;
 
                 /* typography */
                 font-size:          var(--text-4xl);
