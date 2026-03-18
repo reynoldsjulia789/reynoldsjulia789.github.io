@@ -2,7 +2,7 @@
 
 body
 {
-    background: radial-gradient(75% 200% at 20% 25%, #0c0c0c 50%, #0c0c0c00 100%), url(/images/Computer_Unsplash.jpg) darkgray 50% / cover no-repeat;
+    background: radial-gradient(75% 200% at 20% 25%, #0c0c0c 50%, #0c0c0c00 100%), url(/public/images/Computer_Unsplash.jpg) darkgray 50% / cover no-repeat;
     background-blend-mode: hard-light, difference;
 }
 
