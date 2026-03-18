@@ -1,5 +1,11 @@
 @import "./variables.css";
 
+body
+{
+    background: radial-gradient(75% 200% at 20% 25%, #0c0c0c 50%, #0c0c0c00 100%), url(/images/RedElectronics_Unsplash.jpg) darkgray 50% / cover no-repeat;
+    background-blend-mode: normal, difference;
+}
+
 /* INDEX PAGE */
 .indexContent
 {
