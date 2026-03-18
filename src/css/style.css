@@ -1,65 +1,4 @@
-@import "aktura.css";
-@import "pencerio.css";
-@import "array.css";
-@import "bespoke-serif.css";
-@import "bespoke-stencil.css";
-@import "britney.css";
-
-:root
-{
-    /* Grey */
-    --black:        #0c0c0c;
-    --grey-1:       #121212;
-    --grey-2:       #1c1c1c;
-    --grey-3:       #2c2c2c;
-    --grey-4:       #595959;
-    --grey-5:       #808080;
-    --grey-6:       #a6a6a6;
-    --grey-7:       #bfbfbf;
-    --grey-8:       #d9d9d9;
-    --grey-9:       #f2f2f2;
-    --white:        #ffffff;
-
-    /* Colors */
-    --color-1:      #ff0000;
-    --color-2:      #fb4141;
-    --color-2-2:    #581c1c;
-
-    /* purple #9E9EFF #4d4d69 */
-
-    /* Text Sizes */
-    --text-2xs:     10px;
-    --text-xs:      12px;
-    --text-s:       14px;
-    --text-m:       16px;
-    --text-l:       20px;
-    --text-xl:      24px;
-    --text-2xl:     34px;
-    --text-3xl:     48px;
-    --text-4xl:     60px;
-    --text-5xl:     96px;
-    --text-6xl:     128px;
-
-    /* Space */
-    --space-2xs:    5px;
-    --space-xs:     10px;
-    --space-s:      15px;
-    --space-m:      25px;
-    --space-l:      35px;
-    --space-xl:     50px;
-    --space-2xl:    100px;
-
-    /* Corner Radius */
-    --radius-xs:    2px;
-    --radius-s:     5px;
-    --radius-m:     10px;
-    --radius-l:     25px;
-    --radius-xl:    50px;
-    --radius-full:  100%;
-
-    /* Theme */
-    color-scheme:   dark;
-}
+@import "./variables.css";
 
 html
 {
@@ -71,13 +10,19 @@ html
         display:                grid;
         grid-template-rows:     auto 1fr;
         grid-template-areas:    "header" "main";
-        height:                 100vh;
+        min-height:             100vh;
 
         /* style */
         background-color:       var(--black);
 
         /* default font */
         font-family:            BespokeSerif-Regular;
+
+        /* name styling */
+        .name
+        {
+            font-family:        BespokeStencil-Extrabold;
+        }
 
         /* Nav Bar */
         nav
@@ -126,11 +71,6 @@ html
                     color:          var(--grey-2);
                 }
             }
-
-            .name
-            {
-                font-family:        BespokeStencil-Extrabold;
-            }
         }
 
         main
@@ -157,127 +97,6 @@ html
                 font-weight:        bold;
                 text-align:         center;
                 color:              var(--color-2-2);
-            }
-        }
-
-        .indexContent
-        {
-            /* layout */
-            display:            flex;
-            flex-direction:     row;
-            align-items:        center;
-            justify-content:    center;
-
-            .left
-            {
-                flex:           1;
-                display:        flex;
-                flex-direction: column;
-                gap:            var(--space-s);
-
-                h1
-                {
-                    /* layout */
-                    padding: 0;
-                    margin:  0;
-
-                    /* typography */
-                    font-family: BespokeStencil-Bold;
-                    color:       var(--color-2);
-                }
-                
-                h2
-                {
-                    /* layout */
-                    padding: 0;
-                    margin:  0;
-                }
-
-                p
-                {
-                    /* layout */
-                    padding: 0;
-                    margin:  0;
-
-                    /* typography */
-
-                    text-wrap:          wrap;
-                    text-wrap-style:    balance;
-                }
-
-                .social
-                {
-                    display:        flex;
-                    flex:           row;
-                    align-items:    center;
-                    gap:            var(--space-s);
-
-                    a
-                    {
-                        /* layout */
-                        display:            flex;
-                        flex-direction:     row;
-                        align-items:        center;
-                        justify-content:    center;
-                        border:             1px solid currentColor;
-                        padding:            var(--space-xs);
-                        border-radius:      var(--radius-full);
-
-                        /* typography */
-                        font-size:          var(--text-m);
-                        color:              var(--color-2);
-                    }
-
-                    a:hover
-                    {
-                        background-color:   var(--color-2);
-                        color:              var(--grey-1);
-                    }
-                    
-                    svg
-                    {
-                        width:  var(--text-s);
-                        height: var(--text-s);
-                    }
-                }
-
-                a
-                {
-                    text-decoration:    none;
-                }
-                
-                .resumeBtn
-                {
-                    /* layout */
-                    display:            flex;
-                    flex-direction:     row;
-                    align-items:        center;
-                    justify-content:    center;
-                    padding:            var(--space-xs) var(--space-s);
-                    gap:                var(--space-xs);
-                    
-                    /* style */
-                    border:             1px solid var(--color-2);
-                    border-radius:      var(--radius-m);
-                    background:         none;
-
-                    /* typography */
-                    color:              var(--color-2);
-                    font-size:          var(--text-m);
-                    font-weight:        bold;
-                }
-
-                .resumeBtn:hover
-                {
-                    background-color: var(--color-2);
-                    color:            var(--grey-1);
-                    font-weight:      bold;
-                }
-            }
-
-            .right
-            {
-                flex: 1;
             }
         }
     }
