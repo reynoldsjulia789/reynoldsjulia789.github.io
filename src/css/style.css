@@ -21,7 +21,8 @@ html
         /* name styling */
         .name
         {
-            font-family:        JetBrainsMono-ExtraBold;
+            font-family:        Pencerio-Hairline;
+            font-weight:        bold;
         }
 
         /* Nav Bar */
