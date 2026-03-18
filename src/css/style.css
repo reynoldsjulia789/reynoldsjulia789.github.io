@@ -1,113 +1,96 @@
-:root
+@import "./variables.css";
+
+html
 {
-    /* Grey */
-    --black:        #0c0c0c;
-    --grey-1:       #121212;
-    --grey-2:       #1c1c1c;
-    --grey-3:       #2c2c2c;
-    --grey-4:       #595959;
-    --grey-5:       #808080;
-    --grey-6:       #a6a6a6;
-    --grey-7:       #bfbfbf;
-    --grey-8:       #d9d9d9;
-    --grey-9:       #f2f2f2;
-    --white:        #ffffff;
+    body
+    {
+        /* layout */
+        margin:                 0;
+        padding:                0;
+        display:                grid;
+        grid-template-rows:     auto 1fr;
+        grid-template-areas:    "header" "main";
+        min-height:             100vh;
 
-    /* Colors */
-    --color-1:      #d44040;
-    --color-2:      #9E9EFF;
-    --color-2-2:    #4d4d69;
+        /* style */
+        background-color:       var(--black);
 
-    /* Text Sizes */
-    --text-2xs:     10px;
-    --text-xs:      12px;
-    --text-s:       14px;
-    --text-m:       16px;
-    --text-l:       20px;
-    --text-xl:      24px;
-    --text-2xl:     34px;
-    --text-3xl:     48px;
-    --text-4xl:     60px;
-    --text-5xl:     96px;
-    --text-6xl:     128px;
+        /* default font */
+        font-family:            BespokeSerif-Regular;
 
-    /* Font */
-    font-family:    fantasy;
+        /* name styling */
+        .name
+        {
+            font-family:        Pencerio-Hairline;
+            font-weight:        bold;
+        }
 
-    /* Space */
-    --space-2xs:    5px;
-    --space-xs:     10px;
-    --space-s:      15px;
-    --space-m:      25px;
-    --space-l:      35px;
-    --space-xl:     50px;
-    --space-2xl:    100px;
+        /* Nav Bar */
+        nav
+        {
+            display:            flex;
+            flex-direction:     row;
+            align-items:        center;
+            justify-content:    space-between;
+            padding:            0;
 
-    /* Theme */
-    color-scheme:   dark;
-}
+            ul
+            {
+                list-style-type:    none;
+                display:            flex;
+                flex-direction:     row;
+                align-items:        center;
+                margin:             0;
+                padding:            0;
+                gap:                0;
+            }
 
-body
-{
-    margin: 0;
-}
+            .navBtn
+            {
+                display:            flex;
+                flex-direction:     row;
+                align-items:        center;
+                padding:            var(--space-xs) var(--space-s);
 
-/* Nav Bar */
-nav
-{
-    display:            flex;
-    flex-direction:     row;
-    align-items:        center;
-    justify-content:    space-between;
-    padding:            0;
-}
+                /* Typography */
+                text-decoration:    none;
+                color:              var(--grey-9);
 
-nav ul
-{
-    list-style-type:    none;
-    display:            flex;
-    flex-direction:     row;
-    align-items:        center;
-    margin:             0;
-    padding:            0;
-    gap:                0;
-}
+                span 
+                {
+                    color:          var(--color-2);
+                }
+            }
 
-.navBtn
-{
-    display:            flex;
-    flex-direction:     row;
-    align-items:        center;
-    padding:            var(--space-xs) var(--space-s);
+            .navBtn:hover
+            {
+                color:              var(--grey-2);
+                background-color:   var(--color-2);
+                
+                span 
+                {
+                    color:          var(--grey-2);
+                }
+            }
+        }
 
-    /* Typography */
-    text-decoration:    none;
-    color:              var(--color-2);
-}
+        main
+        {
+            /* PAGE TITLE */
+            .pgTitle
+            {
+                /* layout */
+                display:            flex;
+                align-items:        center;
+                justify-content:    center;
+                height:             100%;
 
-.navBtn:hover
-{
-    background-color:   var(--grey-3);   
-}
-
-/* Body */
-
-/* PageTitle */
-.pgTitle
-{
-    /* layout */
-    display:            flex;
-    align-items:        center;
-    justify-content:    center;
-    padding:            var(--space-2xl) 0;
-    height:             67vh;
-
-    /* style */
-    background-color:   var(--black);
-
-    /* typography */
-    font-size:          var(--text-4xl);
-    font-weight:        bold;
-    text-align:         center;
-    color:              var(--color-2-2);
+                /* typography */
+                font-size:          var(--text-4xl);
+                font-weight:        bold;
+                text-align:         center;
+                color:              var(--color-2-2);
+            }
+        }
+    }
 }

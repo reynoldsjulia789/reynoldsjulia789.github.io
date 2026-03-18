@@ -7,5 +7,6 @@ This is a site displaying my work and contact info
 * Vite
 
 ## Credits/Resources
-* Fonts - Fontshare
-* Icons - Lucide.dev
+* Fonts - Fontshare.com
+* Icons - Lucide.dev, Iconify.design, GetBootstrap.com
+* Images - Unsplash.com

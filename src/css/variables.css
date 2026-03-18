@@ -1,0 +1,70 @@
+/* tailwind */
+@import "tailwindcss";
+
+/* fonts */
+@import "./fonts/aktura.css";
+@import "./fonts/pencerio.css";
+@import "./fonts/array.css";
+@import "./fonts/bespoke-serif.css";
+@import "./fonts/bespoke-stencil.css";
+@import "./fonts/britney.css";
+@import "./fonts/zina.css";
+@import "./fonts/hoover.css";
+@import "./fonts/jet-brains-mono.css";
+
+
+:root
+{
+    /* Grey */
+    --black:        #0c0c0c;
+    --grey-1:       #121212;
+    --grey-2:       #1c1c1c;
+    --grey-3:       #2c2c2c;
+    --grey-4:       #595959;
+    --grey-5:       #808080;
+    --grey-6:       #a6a6a6;
+    --grey-7:       #bfbfbf;
+    --grey-8:       #d9d9d9;
+    --grey-9:       #f2f2f2;
+    --white:        #ffffff;
+
+    /* Colors */
+    --color-1:      #a1e3ff;
+    --color-2:      #fb4141;
+    --color-2-2:    #581c1c;
+
+    /* purple #9E9EFF #4d4d69 */
+
+    /* Text Sizes */
+    --text-2xs:     10px;
+    --text-xs:      12px;
+    --text-s:       14px;
+    --text-m:       16px;
+    --text-l:       20px;
+    --text-xl:      24px;
+    --text-2xl:     34px;
+    --text-3xl:     48px;
+    --text-4xl:     60px;
+    --text-5xl:     96px;
+    --text-6xl:     128px;
+
+    /* Space */
+    --space-2xs:    5px;
+    --space-xs:     10px;
+    --space-s:      15px;
+    --space-m:      25px;
+    --space-l:      35px;
+    --space-xl:     50px;
+    --space-2xl:    100px;
+
+    /* Corner Radius */
+    --radius-xs:    2px;
+    --radius-s:     5px;
+    --radius-m:     10px;
+    --radius-l:     25px;
+    --radius-xl:    50px;
+    --radius-full:  100%;
+
+    /* Theme */
+    color-scheme:   dark;
+}

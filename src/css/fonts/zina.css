@@ -1,0 +1,22 @@
+/**
+* @license
+*
+* Font Family: Zina
+* Designed by: Théo Guillard
+* URL: https://www.fontshare.com/fonts/zina
+* © 2026 Indian Type Foundry
+*
+* Zina Regular 
+
+*
+*/
+@font-face {
+  font-family: 'Zina-Regular';
+  src: url('../../assets/fonts/zina/Zina-Regular.woff2') format('woff2'),
+       url('../../assets/fonts/zina/Zina-Regular.woff') format('woff'),
+       url('../../assets/fonts/zina/Zina-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+

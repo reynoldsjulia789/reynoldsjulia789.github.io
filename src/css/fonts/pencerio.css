@@ -1,0 +1,22 @@
+/**
+* @license
+*
+* Font Family: Pencerio
+* Designed by: Manushi Parikh
+* URL: https://www.fontshare.com/fonts/pencerio
+* © 2026 Indian Type Foundry
+*
+* Pencerio Hairline 
+
+*
+*/
+@font-face {
+  font-family: 'Pencerio-Hairline';
+  src: url('../../assets/fonts/pencerio/Pencerio-Hairline.woff2') format('woff2'),
+       url('../../assets/fonts/pencerio/Pencerio-Hairline.woff') format('woff'),
+       url('../../assets/fonts/pencerio/Pencerio-Hairline.ttf') format('truetype');
+  font-weight: 50;
+  font-display: swap;
+  font-style: normal;
+}
+
