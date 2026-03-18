@@ -2,14 +2,15 @@
 @import "tailwindcss";
 
 /* fonts */
-@import "./aktura.css";
-@import "./pencerio.css";
-@import "./array.css";
-@import "./bespoke-serif.css";
-@import "./bespoke-stencil.css";
-@import "./britney.css";
-@import "./zina.css";
-@import "./hoover.css";
+@import "./fonts/aktura.css";
+@import "./fonts/pencerio.css";
+@import "./fonts/array.css";
+@import "./fonts/bespoke-serif.css";
+@import "./fonts/bespoke-stencil.css";
+@import "./fonts/britney.css";
+@import "./fonts/zina.css";
+@import "./fonts/hoover.css";
+@import "./fonts/jet-brains-mono.css";
 
 
 :root

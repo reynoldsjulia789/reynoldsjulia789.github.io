@@ -12,9 +12,9 @@
 */
 @font-face {
   font-family: 'Zina-Regular';
-  src: url('../assets/fonts/zina/Zina-Regular.woff2') format('woff2'),
-       url('../assets/fonts/zina/Zina-Regular.woff') format('woff'),
-       url('../assets/fonts/zina/Zina-Regular.ttf') format('truetype');
+  src: url('../../assets/fonts/zina/Zina-Regular.woff2') format('woff2'),
+       url('../../assets/fonts/zina/Zina-Regular.woff') format('woff'),
+       url('../../assets/fonts/zina/Zina-Regular.ttf') format('truetype');
   font-weight: 400;
   font-display: swap;
   font-style: normal;
