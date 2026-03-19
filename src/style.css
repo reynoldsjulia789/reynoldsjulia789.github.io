@@ -18,6 +18,7 @@ html
 
         /* default font */
         font-family:            BespokeSerif-Regular;
+        font-size:              var(--text-m);
 
         /* name styling */
         .name
@@ -26,51 +27,56 @@ html
             font-weight:        bold;
         }
 
-        /* Nav Bar */
-        nav
+        header
         {
-            display:            flex;
-            flex-direction:     row;
-            align-items:        center;
-            justify-content:    space-between;
-            padding:            0;
+            background-color:   var(--black-75);
 
-            ul
+            /* Nav Bar */
+            nav
             {
-                list-style-type:    none;
                 display:            flex;
                 flex-direction:     row;
                 align-items:        center;
-                margin:             0;
+                justify-content:    space-between;
                 padding:            0;
-                gap:                0;
-            }
 
-            .navBtn
-            {
-                display:            flex;
-                flex-direction:     row;
-                align-items:        center;
-                padding:            var(--space-xs) var(--space-s);
-
-                /* Typography */
-                text-decoration:    none;
-                color:              var(--grey-9);
-
-                span 
+                ul
                 {
-                    color:          var(--color-2);
+                    list-style-type:    none;
+                    display:            flex;
+                    flex-direction:     row;
+                    align-items:        center;
+                    margin:             0;
+                    padding:            0;
+                    gap:                0;
                 }
-            }
 
-            .navBtn:hover
-            {
-                color:              var(--grey-2);
-                background-color:   var(--color-2);
-                
-                span 
+                .navBtn
                 {
-                    color:          var(--grey-2);
+                    display:            flex;
+                    flex-direction:     row;
+                    align-items:        center;
+                    padding:            var(--space-xs) var(--space-s);
+
+                    /* Typography */
+                    text-decoration:    none;
+                    color:              var(--grey-9);
+
+                    span 
+                    {
+                        color:          var(--color-2);
+                    }
+                }
+
+                .navBtn:hover
+                {
+                    color:              var(--grey-2);
+                    background-color:   var(--color-2);
+                    
+                    span 
+                    {
+                        color:          var(--grey-2);
+                    }
                 }
             }
         }

@@ -16,22 +16,23 @@
 :root
 {
     /* Grey */
-    --black:        #0c0c0c;
-    --grey-1:       #121212;
-    --grey-2:       #1c1c1c;
-    --grey-3:       #2c2c2c;
-    --grey-4:       #595959;
-    --grey-5:       #808080;
-    --grey-6:       #a6a6a6;
-    --grey-7:       #bfbfbf;
-    --grey-8:       #d9d9d9;
-    --grey-9:       #f2f2f2;
-    --white:        #ffffff;
+    --black:        hsl(0, 0%, 5%);
+    --black-75:     hsla(0, 0%, 5%, 0.75);
+    --grey-1:       hsl(0, 0%, 7%);
+    --grey-2:       hsl(0, 0%, 11%);
+    --grey-3:       hsl(0, 0%, 17%);
+    --grey-4:       hsl(0, 0%, 35%);
+    --grey-5:       hsl(0, 0%, 50%);
+    --grey-6:       hsl(0, 0%, 65%);
+    --grey-7:       hsl(0, 0%, 75%);
+    --grey-8:       hsl(0, 0%, 85%);
+    --grey-9:       hsl(0, 0%, 95%);
+    --white:        hsl(0, 0%, 100%);
 
     /* Colors */
-    --color-1:      #a1e3ff;
-    --color-2:      #fb4141;
-    --color-2-2:    #581c1c;
+    --color-1:      hsl(198, 100%, 82%);
+    --color-2:      hsl(0, 96%, 62%);
+    --color-2-2:    hsl(0, 52%, 23%);
 
     /* purple #9E9EFF #4d4d69 */
 
@@ -47,6 +48,21 @@
     --text-4xl:     60px;
     --text-5xl:     96px;
     --text-6xl:     128px;
+
+    @media screen and (max-width: 600px)
+    {
+        --text-2xs:     6px;
+        --text-xs:      8px;
+        --text-s:       10px;
+        --text-m:       14px;
+        --text-l:       16px;
+        --text-xl:      20px;
+        --text-2xl:     24px;
+        --text-3xl:     32px;
+        --text-4xl:     36px;
+        --text-5xl:     48px;
+        --text-6xl:     60px;
+    }
 
     /* Space */
     --space-2xs:    5px;
