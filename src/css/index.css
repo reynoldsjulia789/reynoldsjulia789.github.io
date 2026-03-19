@@ -6,6 +6,11 @@ body
     background-blend-mode: hard-light, difference;
 }
 
+header
+{
+    background-color: var(--black-75);
+}
+
 /* INDEX PAGE */
 .indexContent
 {

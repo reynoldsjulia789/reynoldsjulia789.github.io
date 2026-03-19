@@ -29,8 +29,6 @@ html
 
         header
         {
-            background-color:   var(--black-75);
-
             /* Nav Bar */
             nav
             {
@@ -38,7 +36,12 @@ html
                 flex-direction:     row;
                 align-items:        center;
                 justify-content:    space-between;
-                padding:            0;
+                padding-inline:     var(--space-s);
+
+                @media screen and (max-width: 480px)
+                {
+                    padding-inline: 0;
+                }
 
                 ul
                 {
