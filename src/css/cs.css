@@ -93,6 +93,8 @@ h1
         h2
         {
             align-self: stretch;
+            margin:     0;
+            padding:    0;
 
             /* typography */
             font-size:      var(--text-xl);
@@ -103,6 +105,8 @@ h1
         p
         {
             align-self: stretch;
+            margin:     0;
+            padding:    0;
             
             filter:     opacity(80%);
         }
@@ -120,6 +124,11 @@ h1
         width:  var(--text-xl);
         height: var(--text-xl);
     }
+
+    a
+    {
+        color:  var(--grey-9);
+    }
 }
 
 .project1
@@ -131,7 +140,7 @@ h1
 
     img
     {
-        width:          750px;
+        max-width:      600px;
         border-radius:  var(--radius-m);
     }
 }
@@ -145,7 +154,7 @@ h1
 
     img
     {
-        width:          750px;
+        max-width:      600px;
         border-radius:  var(--radius-m);
     }
 }
@@ -160,8 +169,8 @@ h1
 
     img
     {
-        width:          300px;
-        border-radius:  var(--radius-m);
+        max-width:          300px;
+        border-radius:      var(--radius-m);
     }
 }
 
@@ -174,7 +183,7 @@ h1
 
     img
     {
-        width:          500px;
+        max-width:      500px;
         border-radius:  var(--radius-m);
         transform:      rotate(180deg);
     }
