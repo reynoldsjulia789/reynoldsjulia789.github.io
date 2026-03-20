@@ -137,14 +137,6 @@ h1
     }
 }
 
-@media screen and (max-width: 1160px)
-{
-    p
-    {
-        font-size: var(--text-s);
-    }
-}
-
 .project1
 {
     .projectPic
@@ -200,6 +192,52 @@ h1
         max-width:      500px;
         border-radius:  var(--radius-m);
         transform:      rotate(180deg);
+    }
+}
+
+@media screen and (max-width: 1160px)
+{
+    .project
+    {
+        height:         22em;
+    }
+
+    p
+    {
+        font-size:      var(--text-s);
+    }
+}
+
+@media screen and (max-width: 1045px)
+{
+    .project
+    {
+        height:  auto;
+    }
+    
+    .project1 .projectPic
+    {
+        padding: 0;
+    }
+
+    .project2 .projectPic
+    {
+        padding: 0;
+    }
+
+    .project3 .projectPic
+    {
+        padding: 0;
+
+        img
+        {
+            max-height: 15em;
+        }
+    }
+
+    .project4 .projectPic
+    {
+        padding: 0;
     }
 }
 
