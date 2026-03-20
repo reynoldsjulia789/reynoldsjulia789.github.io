@@ -1,0 +1,65 @@
+@import "./variables.css";
+
+body
+{
+    background: url("../assets/images/RedBlueMesh_Unsplash.jpg") lightgray 50% / cover no-repeat;
+    background-blend-mode: overlay, normal;
+}
+
+.project1
+{
+    .projectPic
+    {
+        padding-top:        10em;
+        padding-inline:     10%;
+    }
+
+    img
+    {
+        padding-top:    8em;
+        max-width:      300px;
+        border-radius:  var(--radius-m);
+    }
+}
+
+.project2
+{
+    .projectPic
+    {
+        padding-bottom:        12em;
+        padding-inline:        10%;
+    }
+
+    img
+    {
+        padding-bottom:     15em;
+        max-width:          300px;
+        border-radius:      var(--radius-m);
+    }
+}
+
+.project3
+{
+    .projectPic
+    {
+        padding-top:        10em;
+        padding-inline:     10%;
+    }
+
+    img
+    {
+        padding-top:    12em;
+        max-width:      300px;
+        border-radius:  var(--radius-m);
+    }
+}
+
+.project4
+{
+
+    img
+    {
+        max-width:      500px;
+        border-radius:  var(--radius-m);
+    }
+}
