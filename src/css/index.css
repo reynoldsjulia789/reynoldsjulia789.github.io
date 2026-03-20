@@ -84,20 +84,9 @@ header
 
             a
             {
-                /* layout */
-                display:            flex;
-                flex-direction:     row;
-                align-items:        center;
-                justify-content:    center;
-                border:             1px solid currentColor;
-                padding:            var(--space-xs);
-                border-radius:      var(--radius-m);
-                gap:                var(--space-xs);
-
                 /* typography */
                 font-size:          var(--text-m);
                 color:              var(--color-1);
-                text-decoration:    none;
             }
 
             a:hover
@@ -108,34 +97,27 @@ header
             
             svg
             {
-                width:  var(--text-s);
-                height: var(--text-s);
+                width:  var(--text-m);
+                height: var(--text-m);
             }
 
             .resumeBtn
             {
                 /* layout */
-                display:            flex;
-                flex-direction:     row;
-                align-items:        center;
-                justify-content:    center;
                 padding:            var(--space-xs) var(--space-s);
                 gap:                var(--space-xs);
                 
                 /* style */
-                border:             1px solid currentColor;
-                border-radius:      var(--radius-m);
                 background:         none;
 
                 /* typography */
                 color:              var(--color-2);
                 font-size:          var(--text-m);
-                font-weight:        bold;
 
                 svg
                 {
-                    width:          var(--text-l);
-                    height:         var(--text-l);
+                    width:          var(--text-xl);
+                    height:         var(--text-xl);
                 }
             }
 
@@ -143,7 +125,6 @@ header
             {
                 background-color: var(--color-2);
                 color:            var(--grey-1);
-                font-weight:      bold;
             }
         }
     }

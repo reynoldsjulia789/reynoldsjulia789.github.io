@@ -101,6 +101,37 @@ html
                 text-align:         center;
                 color:              var(--color-2-2);
             }
+
+            a
+            {
+                /* layout */
+                display:            flex;
+                flex-direction:     row;
+                align-items:        center;
+                justify-content:    center;
+
+                padding:            var(--space-xs);
+                gap:                var(--space-xs);
+
+                border:             1px solid currentColor;
+                border-radius:      var(--radius-m);
+                
+                /* typography */
+                text-decoration:    none;
+                font-weight:        bold;
+            }
+
+            a:hover
+            {
+                background-color:   var(--grey-9);
+                color:              var(--grey-1);
+            }
+            
+            svg
+            {
+                width:  var(--text-l);
+                height: var(--text-l);
+            }
         }
     }
 }
