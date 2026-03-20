@@ -34,6 +34,11 @@ header
     }
 }
 
+main
+{
+    color: var(--grey-9);
+}
+
 .labelSection
 {
     display:        flex;
@@ -131,7 +136,7 @@ h1
 
     img
     {
-        width:          750px;
+        max-width:      600px;
         border-radius:  var(--radius-m);
     }
 }
@@ -145,7 +150,7 @@ h1
 
     img
     {
-        width:          750px;
+        max-width:      600px;
         border-radius:  var(--radius-m);
     }
 }
@@ -160,8 +165,8 @@ h1
 
     img
     {
-        width:          300px;
-        border-radius:  var(--radius-m);
+        max-width:          300px;
+        border-radius:      var(--radius-m);
     }
 }
 
@@ -174,7 +179,7 @@ h1
 
     img
     {
-        width:          500px;
+        max-width:      500px;
         border-radius:  var(--radius-m);
         transform:      rotate(180deg);
     }
