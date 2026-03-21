@@ -24,7 +24,8 @@ body
 {
     .projectPic
     {
-        padding-bottom:        12em;
+        padding-bottom:        10em;
+        align-self:            flex-start;
     }
 
     img
@@ -38,7 +39,7 @@ body
 {
     .projectPic
     {
-        padding-top:        8em;
+        padding-top:        10em;
         padding-inline:     10%;
     }
 
@@ -53,13 +54,14 @@ body
 {
     .projectPic
     {
-        padding-top:        8em;
+        padding-top:    8em;
+        padding-inline: 2em;
     }
 
     img
     {
         max-width:      500px;
         border-radius:  var(--radius-m);
-        transform:      rotate(180deg);
+        /* transform:      rotate(180deg); */
     }
 }

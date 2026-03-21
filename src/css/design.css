@@ -11,7 +11,7 @@ body
     .projectPic
     {
         padding-top:        10em;
-        padding-inline:     10%;
+        padding-inline:     2em;
     }
 
     img
@@ -26,8 +26,9 @@ body
 {
     .projectPic
     {
-        padding-bottom:        12em;
-        padding-inline:        10%;
+        padding-bottom:        8em;
+        padding-inline:        2em;
+        align-self:            flex-start;
     }
 
     img
@@ -43,7 +44,7 @@ body
     .projectPic
     {
         padding-top:        10em;
-        padding-inline:     10%;
+        padding-inline:     2em;
     }
 
     img
@@ -56,6 +57,11 @@ body
 
 .project4
 {
+    .projectPic
+    {
+        align-self: auto;
+        height:     auto;
+    }
 
     img
     {
