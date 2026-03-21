@@ -1,0 +1,167 @@
+@import "./variables.css";
+
+body
+{
+    background: url("../assets/images/SheetMusic_Unsplash.jpg") lightgray 50% / cover no-repeat;
+    background-blend-mode: soft-light, normal;
+}
+
+a
+{
+    color: var(--grey-9);
+}
+
+.labelSection
+{
+    padding-inline: var(--space-m);
+}
+
+.piecesContainer
+{
+    display:            flex;
+    flex-direction:     row;
+    flex-wrap:          wrap;
+    justify-content:    space-evenly;
+
+    height:             100%;
+    width:              100%;
+    padding-bottom:     var(--space-xl);
+    gap:                var(--space-m);
+}
+
+.piece
+{
+    display:        flex;
+    flex-direction: column;
+    flex-wrap:      nowrap;
+
+    height:         stretch;
+    max-width:      20em;
+    padding:        var(--space-m);
+    gap:            var(--space-l);
+
+    border-radius:  var(--radius-m);
+    /* border:         2px solid var(--grey-9); */
+
+    background-color: var(--black-75);
+
+    .left
+    {
+        display:            flex;
+        flex-direction:     column;
+        justify-content:    center;
+        align-items:        flex-start;
+        gap:                var(--space-s);
+    }
+
+    .about
+    {
+        display:            flex;
+        flex-direction:     column;
+        align-items:        flex-start;
+        justify-content:    space-between;
+        gap:                var(--space-s);
+        height:             100%;        
+    }
+
+    .text
+    {
+        display:            flex;
+        flex-direction:     column;
+        gap:                var(--space-s);
+        height:             100%;        
+    }
+
+    .titlebox
+    {
+        display:            flex;
+        flex-direction:     row;
+        align-items:        center;
+        justify-content:    space-between;
+        gap:                var(--space-m);
+
+        width:              100%;
+    }
+
+    h2
+    {
+        padding:        0;
+        margin:         0;
+        color:          var(--grey-9);
+
+        font-size:      var(--text-l);
+    }
+
+    .image
+    {
+        display:            flex;
+        flex-direction:     column;
+        align-items:        center;
+        justify-content:    flex-end;
+
+        height:             100%;
+        min-height:         10em;
+        width:              100%;
+
+        border-radius:      var(--radius-m);
+        background-size:    cover;
+    }
+
+    audio::-webkit-media-controls-enclosure 
+    {
+        background-color:   transparent;
+        border:             1px solid var(--grey-9);
+        border-radius:      var(--radius-m);
+    }
+
+    audio
+    {
+        width: 100%;
+    }
+
+    p
+    {
+        padding:        0;
+        margin:         0;
+        text-wrap:      wrap;
+    }
+}
+
+/* Images */
+#saxQuartet .image
+{
+    background-image:   url(../assets/images/musicImages/saxophone.jpg);
+}
+
+#oboeTrio .image
+{
+    background-image:   url(../assets/images/musicImages/Oboe.jpeg);
+}
+
+#redbullRavioli .image
+{
+    background-image:   url(../assets/images/musicImages/JazzInstruments2.jpeg);
+}
+
+#carrotParrot .image
+{
+    background-image:   url(../assets/images/musicImages/JazzInstruments.jpeg);
+}
+
+#schedulingConflict .image
+{
+    background-image:   url(../assets/images/musicImages/Flute.jpeg);
+}
+
+#buttonLicense .image
+{
+    background-image:   url(../assets/images/musicImages/trombone.jpg);
+}
+
+@media screen and (max-width: 690px)
+{
+    .piece
+    {
+        flex-direction: column;
+    }
+}

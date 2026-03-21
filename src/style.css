@@ -8,8 +8,8 @@ html
         margin:                 0;
         padding:                0;
         display:                grid;
-        grid-template-rows:     auto 1fr;
-        grid-template-areas:    "header" "main";
+        grid-template-rows:     auto 1fr auto;
+        grid-template-areas:    "header" "main" "footer";
         min-height:             100vh;
 
         /* style */
@@ -130,6 +130,28 @@ html
             {
                 width:  var(--text-l);
                 height: var(--text-l);
+            }
+        }
+
+        footer
+        {
+            display:            flex;
+            justify-content:    flex-end;
+            align-items:        center;
+            padding:            var(--space-xs) var(--space-s);
+
+            color:              var(--grey-5);
+
+            a
+            {
+                text-decoration:    none;
+                color:              currentColor;
+            }
+
+            a:hover
+            {
+                text-decoration:    underline;
+                color:              var(--color-2);
             }
         }
     }
