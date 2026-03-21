@@ -56,9 +56,9 @@ h1
     display:            flex;
     flex-direction:     row;
     padding-inline:     5%;
-    justify-content:    center;
+    justify-content:    space-evenly;
     align-items:        top;
-    gap:                50px;
+    gap:                var(--space-xl);
     height:             auto;
 
     .projectPic
@@ -88,7 +88,7 @@ h1
 
         /* typography */
         text-wrap-mode:     wrap;
-        text-wrap-style:    balance;
+        text-wrap-style:    pretty;
 
         h2
         {
@@ -117,34 +117,17 @@ h1
     {
         display:        flex;
         flex-direction: row;
+        flex-wrap:      wrap;
         gap:            var(--space-m);
-    }
 
-    .globalgamejam svg
-    {
-        width:  var(--text-xl);
-        height: var(--text-xl);
-    }
-
-    a
-    {
-        color:  var(--grey-9);
+        a
+        {
+            text-wrap: nowrap;
+        }
     }
 }
 
-@media screen and (max-width: 1160px)
+a
 {
-    .project .description p
-    {
-        font-size:      var(--text-s);
-    }
-}
-
-@media screen and (max-width: 1045px)
-{
-    .project
-    {
-
-        height:  auto;
-    }
+    color:  var(--grey-9);
 }
