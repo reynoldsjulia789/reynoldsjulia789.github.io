@@ -12,6 +12,5 @@ This is a site displaying my work and contact info
 
 ## Resources
 * https://developer.mozilla.org/en-US/docs/Web/CSS
-* https://tailwindcss.com/docs
 * https://stackoverflow.com/questions
 * Figma
